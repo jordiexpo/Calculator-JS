@@ -1,0 +1,125 @@
+body {
+ background-color: slategray;
+ font-family: Helvetica;
+ margin: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.header {
+ text-align: center;
+}
+#theme-1, #theme-2, #theme-3{
+ margin: 10px;
+}
+.calculator {
+ width: 30vw;
+ height: 85vh;
+ padding: 20px;
+ border: 5px solid aliceblue;
+ border-radius: 20px;
+ text-align: center;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ -ms-border-radius: 20px;
+ -o-border-radius: 20px;
+}
+.display {
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+#result {
+ width: 20vw;
+ padding: 10px;
+ font-size: 20px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ color: aliceblue;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+
+.button-grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 10px;
+ width: 30vw;
+ height: 50vh;
+}
+
+.button {
+ padding: 15px;
+ font-size: 18px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ cursor: pointer;
+ text-align: center;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+
+
+
+.theme-1 .calculator {
+ background-color: rgb(42, 42, 107);
+color: aliceblue;
+}
+
+.theme-1 .button {
+ background-color: #ffcc00;
+ border: 3px solid #ccc;
+}
+.theme-1 .button.equal {
+ background-color: #4caf50;
+ color: #fff;
+}
+
+.theme-1 .button.clear {
+ background-color: #f44336;
+ color: #fff;
+}
+
+.theme-2 .calculator {
+ background-color: #eec615;
+ color: antiquewhite;
+}
+
+.theme-2 .button {
+ background-color: palevioletred; 
+ border: 3px solid #ccc;
+ color: antiquewhite;
+}
+.theme-2 .button.equal {
+ background-color: #4caf50;
+ color: #fff;
+}
+
+.theme-2 .button.clear {
+ background-color: #f44336;
+ color: #fff;
+}
+
+/* Estilo para theme-3 */
+.theme-3 .calculator {
+ background-color: black; 
+ color: goldenrod;
+}
+
+.theme-3 .button {
+ background-color: gainsboro; 
+}
+
+.theme-3 .button.equal {
+ background-color: #4caf50;
+ color: #fff;
+}
+
+.theme-3 .button.clear {
+ background-color: #f44336;
+ color: #fff;
+}

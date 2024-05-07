@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
 </head>
+
 <body>
- 
+    <main>
+        <div class="calculator">
+            <div class="header">
+                <h1>CALCULATOR</h1>
+                <h3>THEMES</h3>
+                <div class="theme-selector">
+                    <input type="radio" name="theme" id="theme-1">
+                    <label for="theme-1">1</label>
+                    <input type="radio" name="theme" id="theme-2">
+                    <label for="theme-2">2</label>
+                    <input type="radio" name="theme" id="theme-3">
+                    <label for="theme-3">3</label>
+                </div>
+            </div>
+
+            <div class="display">
+                <input type="text" id="result" disabled>
+            </div>
+
+            <div class="button-grid">
+                <button id="btn-7" class="button">7</button>
+                <button id="btn-8" class="button">8</button>
+                <button id="btn-9" class="button">9</button>
+                <button id="btn-divide" class="button operator">/</button>
+            
+                <button id="btn-4" class="button">4</button>
+                <button id="btn-5" class="button">5</button>
+                <button id="btn-6" class="button">6</button>
+                <button id="btn-multiply" class="button operator">*</button>
+            
+                <button id="btn-1" class="button">1</button>
+                <button id="btn-2" class="button">2</button>
+                <button id="btn-3" class="button">3</button>
+                <button id="btn-subtract" class="button operator">-</button>
+            
+                <button id="btn-0" class="button">0</button>
+                <button id="btn-clear" class="button clear">C</button>
+                <button id="btn-equal" class="button equal">=</button>
+                <button id="btn-add" class="button operator">+</button>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
 </body>
 </html>
